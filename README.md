@@ -39,3 +39,9 @@ The folder and file structure of the App scaffold is as follow:
 | :------------------------------------------------ | :------------------------------------------------------------------------------------ |
 | [`src/`](#src)                                    | The folder in which all of our source and business prosess                            |
 | [`tests/`](#tests)                                | The folder which contain our spec and test                                            |
+
+## Documentation
+After setup the project and able to run locally, please visit
+> http://127.0.0.1:4000/
+
+You can read the Docs and Schema on GraphQL playground, all the Query and Mutation will be there.
