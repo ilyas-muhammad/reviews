@@ -1,0 +1,5 @@
+{
+    "name" : "checkout-api",
+    "script" : "build/index.js",
+    "node_args": "--require dotenv/config"
+  }
