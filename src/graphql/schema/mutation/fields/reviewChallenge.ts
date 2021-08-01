@@ -1,7 +1,7 @@
 import { ObjectDefinitionBlock } from 'nexus/dist/definitions/objectType';
 import { intArg, arg, stringArg } from 'nexus';
 import { Challenge, GradeEnum } from '../../type/Challenge';
-import reviewChallenge from '../../../resolver/reviewChallenge';
+import reviewChallenge from '../../../resolver/challenge/reviewChallenge';
 
 export default (t: ObjectDefinitionBlock<'Mutation'>): void => {
   t.field('reviewChallenge', {

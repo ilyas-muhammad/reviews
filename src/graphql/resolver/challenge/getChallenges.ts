@@ -1,6 +1,6 @@
-import log from '../../helpers/logger/log';
-import { find } from '../../models/dao/challenge';
-import { Challenge } from '../../models/challenges';
+import log from '../../../helpers/logger/log';
+import { find } from '../../../models/dao/challenge';
+import { Challenge } from '../../../models/challenges';
 
 export interface Args {
   studentId?: number;

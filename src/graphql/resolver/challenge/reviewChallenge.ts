@@ -1,7 +1,7 @@
-import { code, generateError } from '../../helpers/error';
-import log from '../../helpers/logger/log';
-import { findByReviewerId, findOne, update } from '../../models/dao/challenge';
-import { Challenge } from '../../models/challenges';
+import { code, generateError } from '../../../helpers/error';
+import log from '../../../helpers/logger/log';
+import { findByReviewerId, findOne, update } from '../../../models/dao/challenge';
+import { Challenge } from '../../../models/challenges';
 
 export interface Args {
   challengeId: number;

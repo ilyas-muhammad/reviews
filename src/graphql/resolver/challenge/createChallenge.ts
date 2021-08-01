@@ -1,7 +1,7 @@
-import { code, generateError } from '../../helpers/error';
-import log from '../../helpers/logger/log';
-import save from '../../models/dao/challenge';
-import { Challenge } from '../../models/challenges';
+import { code, generateError } from '../../../helpers/error';
+import log from '../../../helpers/logger/log';
+import save from '../../../models/dao/challenge';
+import { Challenge } from '../../../models/challenges';
 
 export interface Args {
   sku: string;

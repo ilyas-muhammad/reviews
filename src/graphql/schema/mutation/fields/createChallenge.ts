@@ -1,7 +1,7 @@
 import { ObjectDefinitionBlock } from 'nexus/dist/definitions/objectType';
 import { intArg, arg, stringArg } from 'nexus';
 import { Challenge } from '../../type/Challenge';
-import createChallenge from '../../../resolver/createChallenge';
+import createChallenge from '../../../resolver/challenge/createChallenge';
 
 export default (t: ObjectDefinitionBlock<'Mutation'>): void => {
   t.field('createChallenge', {

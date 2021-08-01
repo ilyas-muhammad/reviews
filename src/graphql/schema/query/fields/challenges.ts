@@ -1,7 +1,7 @@
 import { ObjectDefinitionBlock } from 'nexus/dist/definitions/objectType';
 import { intArg, arg, stringArg } from 'nexus';
 import { Challenge, GradeEnum, StatusEnum } from '../../type/Challenge';
-import getChallenges from '../../../resolver/getChallenges';
+import getChallenges from '../../../resolver/challenge/getChallenges';
 
 export default (t: ObjectDefinitionBlock<'Query'>): void => {
   t.field('challenges', {

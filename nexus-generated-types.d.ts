@@ -65,6 +65,8 @@ export interface NexusGenFieldTypes {
   Mutation: {
     // field return type
     createChallenge: NexusGenRootTypes['Challenge']; // Challenge!
+    createReviewer: NexusGenRootTypes['Reviewer']; // Reviewer!
+    createStudent: NexusGenRootTypes['Student']; // Student!
     reviewChallenge: NexusGenRootTypes['Challenge']; // Challenge!
     submitChallenge: NexusGenRootTypes['Challenge']; // Challenge!
   };
@@ -72,6 +74,8 @@ export interface NexusGenFieldTypes {
     // field return type
     challenges: NexusGenRootTypes['Challenge'][]; // [Challenge!]!
     healtCheck: string; // String!
+    reviewers: NexusGenRootTypes['Reviewer'][]; // [Reviewer!]!
+    students: NexusGenRootTypes['Student'][]; // [Student!]!
   };
   Reviewer: {
     // field return type
@@ -92,6 +96,14 @@ export interface NexusGenArgTypes {
       description: string; // String!
       reviewerId: number; // Int!
       studentId: number; // Int!
+    };
+    createReviewer: {
+      // args
+      name: string; // String!
+    };
+    createStudent: {
+      // args
+      name: string; // String!
     };
     reviewChallenge: {
       // args
@@ -115,6 +127,14 @@ export interface NexusGenArgTypes {
       reviewerId?: number | null; // Int
       status?: NexusGenEnums['StatusEnum'] | null; // StatusEnum
       studentId?: number | null; // Int
+    };
+    reviewers: {
+      // args
+      id?: number | null; // Int
+    };
+    students: {
+      // args
+      id?: number | null; // Int
     };
   };
 }
