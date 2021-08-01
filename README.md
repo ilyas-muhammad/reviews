@@ -1,10 +1,11 @@
-# Backend Checkout Service
+# Reviews Service
 Reviews assignment API with Nexus GraphQL Typescript and MongoDB
 
 ## Getting Started
 ### Dependecies
 - Node.js >= 12.0.0
 - Yarn >= 1.22.4
+- Mongo >= 4.2.5
 
 ### Setup 
 1. Clone or fork this repo
