@@ -6,6 +6,12 @@ export const find = async (filter): Promise<Student[]> => {
   return result;
 };
 
+export const findOne = async (incrementId: number): Promise<Student | null> => {
+  const result = await StudentModel.findOne({ incrementId });
+
+  return result;
+};
+
 const findAndCount = async (): Promise<number> => {
   let count = 0;
   await StudentModel.count({}, function(err, c) {

@@ -5,6 +5,13 @@ export const find = async (filter): Promise<Reviewer[]> => {
 
   return result;
 };
+
+export const findOne = async (incrementId: number): Promise<Reviewer | null> => {
+  const result = await ReviewerModel.findOne({ incrementId });
+
+  return result;
+};
+
 const findAndCount = async (): Promise<number> => {
   let count = 0;
   await ReviewerModel.count({}, function(err, c) {

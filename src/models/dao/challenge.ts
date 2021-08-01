@@ -43,19 +43,13 @@ export const update = async (filter, setObj): Promise<UpdateWriteOpResult> => {
   return result;
 };
 
-const save = async (): Promise<Challenge> => {
+const save = async (params): Promise<Challenge> => {
   const count = await findAndCount();
   const result = await ChallengeModel.create({
     incrementId: count,
-    student: {
-      incrementId: 1,
-      name: 'test-student',
-    },
-    reviewer: {
-      incrementId: 1,
-      name: 'test-teacher',
-    },
-    description: 'test-description',
+    student: params.student,
+    reviewer: params.reviewer,
+    description: params.description,
   });
 
   return result;
